@@ -11,6 +11,7 @@
     "start": "node ./bin/server.js",
     "test:integration": "playwright test",
     "assets": "cp -R dist/assets public/assets",
+    "build:server": "rollup --config rollup.config.js",
     "test": "npm run test:integration && npm run test:unit"
   },
   "keywords": [],
@@ -22,16 +23,17 @@
     "@remix-run/lazy-file": "^3.7.0",
     "@remix-run/node-fetch-server": "^0.11.0",
     "nanoid": "^5.1.6",
+    "rollup": "^4.53.2",
     "stack54": "^0.10.3",
     "svelte": "^4.2.8"
   },
   "devDependencies": {
-    "@playwright/test": "^1.46.1",
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
     "@tsconfig/svelte": "^5.0.2",
     "@types/node": "^24.10.1",
     "typescript": "^5.9.3",
     "vite": "^5.0.10",
     "vitest": "^2.0.5"
-  }
+  },
+  "packageManager": "pnpm@10.14.0"
 }
