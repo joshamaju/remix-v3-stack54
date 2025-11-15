@@ -7,9 +7,9 @@
   "scripts": {
     "dev": "stack54 dev",
     "test:unit": "vitest",
+    "build": "stack54 build",
     "start": "node ./bin/server.js",
     "test:integration": "playwright test",
-    "build": "stack54 build && pnpm assets",
     "assets": "cp -R dist/assets public/assets",
     "test": "npm run test:integration && npm run test:unit"
   },
