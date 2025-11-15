@@ -1,4 +1,10 @@
-## Express
+## Remix v3 + stack54
+
+This is a demo application showcasing the integration of Remix v3 packages with [stack54](https://github.com/joshamaju/stack54).
+
+It also includes a replication of Remix v3 Frames using static HTML + HTMX.
+
+[Live demo](https://remix-v3-stack54.onrender.com)
 
 ## How to use
 
