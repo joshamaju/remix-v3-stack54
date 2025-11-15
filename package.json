@@ -1,0 +1,37 @@
+{
+  "name": "isomorphic_stack54_app",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "stack54 dev",
+    "test:unit": "vitest",
+    "build": "stack54 build",
+    "start": "node ./bin/server.js",
+    "test:integration": "playwright test",
+    "test": "npm run test:integration && npm run test:unit"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@remix-run/cookie": "^0.2.0",
+    "@remix-run/fetch-router": "^0.8.0",
+    "@remix-run/file-storage": "^0.11.0",
+    "@remix-run/headers": "^0.16.0",
+    "@remix-run/lazy-file": "^3.7.0",
+    "@remix-run/node-fetch-server": "^0.11.0",
+    "@stack54/express": "^1.0.9",
+    "nanoid": "^5.1.6",
+    "stack54": "^0.10.3",
+    "svelte": "^4.2.8"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.46.1",
+    "@sveltejs/vite-plugin-svelte": "^3.0.1",
+    "@tsconfig/svelte": "^5.0.2",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3",
+    "vite": "^5.0.10",
+    "vitest": "^2.0.5"
+  }
+}
