@@ -5,7 +5,7 @@ import { openFile } from "@remix-run/lazy-file/fs";
 import { routes } from "./routes";
 
 const assetsDir = path.join(process.cwd(), "dist/assets");
-const publicDir = path.join(process.cwd(), "static/images");
+const publicDir = path.join(process.cwd(), "public/images");
 
 export let assets: BuildRouteHandler<"GET", typeof routes.assets> = async ({
   params,
