@@ -4,6 +4,7 @@ import { logger } from "./plugins/logger.js";
 
 export default defineConfig({
   staticDir: "public",
+  integrations: [server()],
+  vite: { plugins: [logger()] },
   views: ["src/views/**/*.svelte"],
-  integrations: [server(), logger()],
 });
